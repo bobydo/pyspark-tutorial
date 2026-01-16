@@ -35,6 +35,9 @@ To get started with the Jupyter notebooks, follow these steps:
 
    ```bash
    git clone https://github.com/coder2j/pyspark-tutorial.git
+   & "C:\Users\baosh\AppData\Local\Programs\Python\Python311\python.exe" -m venv pysparkenv
+   pip install -r requirements.txt
+   pip install findspark ((pysparkenv) PS D:\pyspark-tutorial> $env:SPARK_HOME C:\Program Files\Eclipse Adoptium\spark-4.1.1-bin-hadoop3\)
    ```
 
 2. Ensure you have Python and Jupyter Notebook installed on your machine.
