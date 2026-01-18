@@ -1,6 +1,11 @@
 # Q8. Partitions
 # Why does Spark use partitions?
-# Answer: B. Parallel processing
+# A. Compression
+# B. Parallel processing
+# C. Schema enforcement
+# D. Metadata storage
+
+# Answer: B
 
 from pyspark.sql import SparkSession
 from pyspark.sql import Row

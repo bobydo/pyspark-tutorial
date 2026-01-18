@@ -1,7 +1,11 @@
 # Q9. Execution order
 # df.filter(...).groupBy("k").count()
 # Which executes first?
-# Answer: C. Optimized together
+# A. filter
+# B. groupBy
+# C. Optimized together
+# D. count
+# Answer: C
 
 from pyspark.sql import SparkSession
 from pyspark.sql import Row

@@ -38,6 +38,28 @@ This repository provides a hands-on PySpark tutorial using VS Code as the primar
    ```
 
 4. Configure all environment variables and paths in the `.env` file at the project root.
+
+### Native Hadoop Binaries for Windows (Parquet/ORC support)
+
+If you want to use Parquet or other advanced Spark features on Windows, you need native Hadoop binaries (DLLs) in addition to winutils.exe.
+
+**How to use the provided hadoop.zip:**
+
+1. Unzip `hadoop.zip` so that all files (DLLs and winutils.exe) are extracted to `D:\hadoop\bin`.
+   - The folder should contain files like `winutils.exe`, `hadoop.dll`, `hadoop-native.dll`, etc.
+2. Set the following environment variables (in your terminal, .env, or launch.json):
+   - `HADOOP_HOME=D:/hadoop`
+   - Add `D:/hadoop/bin` to your `PATH`
+3. Restart VS Code and your terminal to ensure the new environment variables are loaded.
+4. You can now use Spark features that require native Hadoop support (e.g., writing Parquet files) on Windows.
+
+**Example PowerShell commands:**
+```powershell
+$env:HADOOP_HOME="D:/hadoop"
+$env:PATH="D:/hadoop/bin;${env:PATH}"
+```
+
+If you encounter errors, make sure all DLLs are present in `D:/hadoop/bin` and that your Spark/Hadoop version matches the DLLs in the zip.
 5. Open VS Code and select the correct Python interpreter:
    - Load the project folder in VS Code.
    - Press Ctrl + Shift + P and search for "Python: Select Interpreter".

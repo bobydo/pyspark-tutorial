@@ -2,6 +2,14 @@
 # Why does Spark build a DAG?
 # Answer: B. To optimize and plan execution
 
+# Q5. Performance issue
+# Poor performance after groupBy is most likely due to:
+# Answer: B. Shuffle and data movement
+# A. Too many columns
+# B. Shuffle and data movement
+# C. Lazy execution
+# D. Spark version mismatch
+
 from pyspark.sql import SparkSession
 from pyspark.sql import Row
 

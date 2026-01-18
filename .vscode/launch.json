@@ -10,7 +10,9 @@
             "program": "${file}", //debug open file
             "console": "integratedTerminal",
             "env": {
-                "PYSPARK_PYTHON": "D:/pyspark-tutorial/pysparkenv/Scripts/python.exe"
+                "PYSPARK_PYTHON": "D:/pyspark-tutorial/pysparkenv/Scripts/python.exe",
+                "HADOOP_HOME": "D:/hadoop",
+                "PATH": "D:/hadoop/bin;${env:PATH}"
             }
         }
     ]
