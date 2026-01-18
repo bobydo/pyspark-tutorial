@@ -52,7 +52,8 @@ If you want to use Parquet or other advanced Spark features on Windows, you need
    - Add `D:/hadoop/bin` to your `PATH`
 3. Restart VS Code and your terminal to ensure the new environment variables are loaded.
 4. You can now use Spark features that require native Hadoop support (e.g., writing Parquet files) on Windows.
-
+5. Online Parquet Viewers:
+Websites like https://parquet-viewer-online.com/ let you upload and view Parquet files.
 **Example PowerShell commands:**
 ```powershell
 $env:HADOOP_HOME="D:/hadoop"
